@@ -1,0 +1,109 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0 ;
+    padding: 0 ;
+    background-color: #f8f8f8;
+    scroll-behavior: smooth;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center ;
+    gap: -10px;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top:0;
+    z-index: 1;
+
+}
+
+.menu-logo{
+    height:60px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.menu a {
+    padding:20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.item img{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    object-fit:cover;
+}
+
+.item-info {
+    flex-grow: 1;
+    padding-left: 15px;
+}
+
+.item-name {
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.item-price {
+    color: #555;
+    font-size: 14px;
+
+}
+
+@media (max-width: 600px) {
+    .item{
+        flex-direction: colum;
+        align-items: flex-start;
+    }
+    .item img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px; 
+    }
+}
+
+.instagram-img-link {
+    height: 10vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s; 
+    
+  }
+  
+  .instagram-img-link:hover {
+    opacity: 0.7;
+  }
+
